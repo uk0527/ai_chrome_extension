@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Image Overlay</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>AI Image Overlay</h1>
+            <p>Transform images with AI personalization</p>
+        </div>
+        
+        <div class="main-content">
+            <button id="runOverlay" class="primary-btn">
+                <span class="btn-icon">AI</span>
+                Run AI Overlay
+            </button>
+            
+            <button id="resetImages" class="secondary-btn" disabled>
+                <span class="btn-icon">Reset</span>
+                Reset Images
+            </button>
+        </div>
+        
+        <div class="settings">
+            <h3>Settings</h3>
+            
+            <div class="setting-group">
+                <label for="faceImageUpload">Your Face Image (Optional):</label>
+                <input type="file" id="faceImageUpload" accept="image/*" style="display: none;">
+                <button id="uploadFaceBtn" class="upload-btn">
+                    <span class="btn-icon">Upload</span>
+                    Upload Your Face
+                </button>
+                <div id="facePreview" class="face-preview" style="display: none;">
+                    <img id="facePreviewImg" src="" alt="Your face">
+                    <button id="removeFaceBtn" class="remove-btn">×</button>
+                </div>
+            </div>
+            
+            <div class="setting-group">
+                <label for="styleSelect">AI Style:</label>
+                <select id="styleSelect">
+                    <option value="artistic">Artistic</option>
+                    <option value="realistic">Realistic</option>
+                    <option value="cartoon">Cartoon</option>
+                    <option value="vintage">Vintage</option>
+                    <option value="modern">Modern</option>
+                </select>
+            </div>
+            
+            <div class="setting-group">
+                <label for="intensityRange">Intensity:</label>
+                <input type="range" id="intensityRange" min="1" max="10" value="5">
+                <span id="intensityValue">5</span>
+            </div>
+        </div>
+        
+        <div class="status" id="status">
+            <div class="status-indicator" id="statusIndicator"></div>
+            <span id="statusText">Ready</span>
+        </div>
+        
+        <div class="footer">
+            <small>Images will be restored on page reload</small>
+        </div>
+    </div>
+    
+    <script src="popup.js"></script>
+</body>
+</html>

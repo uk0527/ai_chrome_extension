@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "AI Image Overlay Extension",
+  "version": "1.0.0",
+  "description": "Replace images on webpages with AI-generated personalized versions using Gemini AI",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Image Overlay"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"],
+      "run_at": "document_end"
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": ["*.png", "*.jpg", "*.jpeg", "*.gif", "*.svg"],
+      "matches": ["<all_urls>"]
+    }
+  ]
+}
