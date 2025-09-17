@@ -2,9 +2,11 @@
 
 A Chrome extension that transforms images on webpages with AI-generated personalized versions using free Hugging Face Stable Diffusion. Upload your face to see yourself in product images!
 
-![Extension Preview](https://img.shields.io/badge/Chrome-Extension-blue?style=for-the-badge&logo=google-chrome)
-![Version](https://img.shields.io/badge/Version-1.0.0-green?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)
+[![Chrome Extension](https://img.shields.io/badge/Chrome-Extension-blue?style=for-the-badge&logo=google-chrome)](https://chrome.google.com/webstore)
+[![Version](https://img.shields.io/badge/Version-1.0.0-green?style=for-the-badge)](https://github.com/uk0527/ai_chrome_extension)
+[![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](https://github.com/uk0527/ai_chrome_extension/blob/main/LICENSE)
+[![GitHub Stars](https://img.shields.io/github/stars/uk0527/ai_chrome_extension?style=for-the-badge)](https://github.com/uk0527/ai_chrome_extension/stargazers)
+[![GitHub Forks](https://img.shields.io/github/forks/uk0527/ai_chrome_extension?style=for-the-badge)](https://github.com/uk0527/ai_chrome_extension/network)
 
 ## Features
 
@@ -23,8 +25,8 @@ A Chrome extension that transforms images on webpages with AI-generated personal
 
 1. **Download the Extension**
    ```bash
-   git clone https://github.com/yourusername/ai-image-overlay-extension.git
-   cd ai-image-overlay-extension
+   git clone https://github.com/uk0527/ai_chrome_extension.git
+   cd ai_chrome_extension
    ```
 
 2. **Load in Chrome**
@@ -86,7 +88,7 @@ Content Script replaces images with AI versions
 
 ### File Structure
 ```
-ai-image-overlay-extension/
+ai_chrome_extension/
 ├── manifest.json          # Extension configuration
 ├── popup.html             # User interface
 ├── popup.css              # Styling
@@ -161,10 +163,10 @@ We welcome contributions! Here's how you can help:
 ### Development Setup
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/ai-image-overlay-extension.git
+git clone https://github.com/uk0527/ai_chrome_extension.git
 
 # Navigate to the directory
-cd ai-image-overlay-extension
+cd ai_chrome_extension
 
 # Load in Chrome (see installation steps above)
 ```
@@ -176,8 +178,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## Support
 
-- **Issues**: Report bugs via [GitHub Issues](https://github.com/yourusername/ai-image-overlay-extension/issues)
-- **Discussions**: Join the conversation in [GitHub Discussions](https://github.com/yourusername/ai-image-overlay-extension/discussions)
+- **Issues**: Report bugs via [GitHub Issues](https://github.com/uk0527/ai_chrome_extension/issues)
+- **Discussions**: Join the conversation in [GitHub Discussions](https://github.com/uk0527/ai_chrome_extension/discussions)
 - **Documentation**: Check this README and code comments
 
 ## Changelog
